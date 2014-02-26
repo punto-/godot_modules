@@ -22,16 +22,16 @@ To enable the module on Android, add the path to the module to the "modules" pro
 	[android]
 	modules="com/android/godot/GodotAdMob"
 
-Note, this is a comma separated list inside a string, you can have other modules there.
+Note this is a comma separated list inside a string, you can have other modules there.
 
-On iOS, the module is enabled by defailt.
+On iOS, the module is enabled by default.
 
 To configure your API key, set the "api_key" property on the [admob] section on your engine.cfg. Example:
 
 	[admob]
 	api_key="0123456789abcdef"
 
-The singleton "AdMob" will be available on gdscript. Note that you can have override for specific platforms, example:
+The singleton "AdMob" will be available on gdscript. Note that you can override the section for specific platforms, example:
 
 
 	[admob.Android]
