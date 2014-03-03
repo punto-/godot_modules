@@ -5,7 +5,7 @@ This is the AdMob module for Godot Engine (https://github.com/okamstudio/godot)
 
 How to use
 ----------
-Drop the "admob" directory inside the "modules" directory on the Godot source. Recompile for your platform.
+Drop the "admob" directory inside the "modules" directory on the Godot source. Recompile for your platform ([Android](https://github.com/okamstudio/godot/wiki/compiling_android) or [iOS](https://github.com/okamstudio/godot/wiki/compiling_ios))
 
 Add the SDKs
 ------------
