@@ -12,7 +12,7 @@ Add the SDKs
 Because we're not sure if we can distribute the Admob library, it was removed fromt this repository, you need to download it and add it yourself.
 
 On Android: put the .jar file inside android/  
-On iOS: unzip the AdMob sdk inside inside sdk/
+On iOS: unzip the AdMob sdk inside sdk/
 
 Configuring your game
 ---------------------
