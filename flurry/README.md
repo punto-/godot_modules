@@ -15,6 +15,7 @@ Because we're not sure if we can distribute the Flurry library, it was removed f
 - On iOS: put the Flurry header file ("Flurry.h") and the library ("libFlurry.a") inside ios/
 - On Blackberry: put the contents of the Flurry SDK inside bps/. The directory contents should look like this:
 
+```
 	bps/
 	bps/Flurry
 	bps/Flurry/x86
@@ -23,6 +24,7 @@ Because we're not sure if we can distribute the Flurry library, it was removed f
 	bps/Flurry/armle-v7/libFlurry.a
 	bps/Flurry.h
 	bps/FlurryC.h
+```
 
 - Everywhere else: the file "flurry_dummy.cpp" will be compiled, to provide a dummy version of the API.
 
@@ -52,8 +54,8 @@ The singleton "AdMob" will be available on gdscript. Note that you can override 
 	[flurry.iOS]
 	api_key="0123456789abcdf0"
 
-        [flurry.QNX] # this is Blackberry
-        api_key="0123456789abcdf1"
+	[flurry.QNX] # this is Blackberry
+	api_key="0123456789abcdf1"
 
 API Reference
 -------------
