@@ -1,0 +1,15 @@
+Import('env')
+
+sources = [
+	'register_types.cpp',
+]
+
+if env['platform'] == "playbook":
+	sources.append('flurry_bps.cpp')
+elif env['platform']=="iphone":
+	sources.append('flurry.mm')
+elif env['platform']!="android":
+	sources.append('flurry_dummy.cpp')
+
+
+env.add_source_files(env.modules_sources, sources)
