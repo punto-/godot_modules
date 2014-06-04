@@ -14,7 +14,6 @@ Because we're not sure if we can distribute the Flurry library, it was removed f
 - On Android: put the file "FlurryAgent.jar" file inside android/
 - On iOS: put the Flurry header file ("Flurry.h") and the library ("libFlurry.a") inside ios/
 - On Blackberry: put the contents of the Flurry SDK inside bps/. The directory contents should look like this:
-- Everywhere else: the file "flurry_dummy.cpp" will be compiled, to provide a dummy version of the API.
 
 	bps/
 	bps/Flurry
@@ -24,6 +23,8 @@ Because we're not sure if we can distribute the Flurry library, it was removed f
 	bps/Flurry/armle-v7/libFlurry.a
 	bps/Flurry.h
 	bps/FlurryC.h
+
+- Everywhere else: the file "flurry_dummy.cpp" will be compiled, to provide a dummy version of the API.
 
 Configuring your game
 ---------------------
@@ -37,7 +38,7 @@ Note this is a comma separated list inside a string, you can have other modules 
 
 On iOS and Blackberry, the module is enabled by default.
 
-To configure your API key, set the "api_key" property on the [admob] section on your engine.cfg. Example:
+To configure your API key, set the "api_key" property on the [flurry] section on your engine.cfg. Example:
 
 	[flurry]
 	api_key="0123456789abcdef"
@@ -67,10 +68,10 @@ Example:
 
 ```
 func game_start():
-	Flurry.log_timed_event("user_session", {})
+	Flurry.log_timed_event("user_session", {"name": user_name})
 
 func user_scored():
-	Flurry.log_event("user_scored", { "total_score": 5 })
+	Flurry.log_event("user_scored", {})
 
 func game_over():
 	Flurry.end_timed_event("user_session")
