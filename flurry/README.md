@@ -9,7 +9,7 @@ Drop the "flurry" directory inside the "modules" directory on the Godot source. 
 
 Add the SDKs
 ------------
-Because we're not sure if we can distribute the Flurry library, it was removed fromt this repository, you need to download it and add it yourself.
+Because we're not sure if we can distribute the Flurry library, it was removed from this repository, you need to download it and add it yourself.
 
 - On Android: put the file "FlurryAgent.jar" file inside android/
 - On iOS: put the Flurry header file ("Flurry.h") and the library ("libFlurry.a") inside ios/
@@ -45,7 +45,7 @@ To configure your API key, set the "api_key" property on the [flurry] section on
 	[flurry]
 	api_key="0123456789abcdef"
 
-The singleton "AdMob" will be available on gdscript. Note that you can override the section for specific platforms, example:
+Note that you can override the section for specific platforms, example:
 
 
 	[flurry.Android]
@@ -59,6 +59,8 @@ The singleton "AdMob" will be available on gdscript. Note that you can override 
 
 API Reference
 -------------
+
+The singleton "Flurry" will be available on gdscript.
 
 The following methods are available, defined on the file flurry.h:
 
