@@ -16,14 +16,14 @@ Because we're not sure if we can distribute the Flurry library, it was removed f
 - On Blackberry: put the contents of the Flurry SDK inside bps/. The directory contents should look like this:
 - Everywhere else: the file "flurry_dummy.cpp" will be compiled, to provide a dummy version of the API.
 
-bps/
-bps/Flurry
-bps/Flurry/x86
-bps/Flurry/x86/libFlurry.a
-bps/Flurry/armle-v7
-bps/Flurry/armle-v7/libFlurry.a
-bps/Flurry.h
-bps/FlurryC.h
+	bps/
+	bps/Flurry
+	bps/Flurry/x86
+	bps/Flurry/x86/libFlurry.a
+	bps/Flurry/armle-v7
+	bps/Flurry/armle-v7/libFlurry.a
+	bps/Flurry.h
+	bps/FlurryC.h
 
 Configuring your game
 ---------------------
