@@ -1,8 +1,10 @@
-package com.android.godot;
+package org.godotengine.godot;
 
 import android.app.Activity;
-import com.android.godot.Dictionary;
+import org.godotengine.godot.Dictionary;
 import com.flurry.android.FlurryAgent;
+//import com.flurry.android.ads.FlurryAdBanner;
+//import com.flurry.android.ads.FlurryAdBannerListener;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -63,7 +65,8 @@ public class GodotFlurry extends Godot.SingletonBase {
 		activity.runOnUiThread(new Runnable() {
 			public void run() {
 				String key = GodotLib.getGlobal("flurry/api_key");
-				FlurryAgent.onStartSession(activity, key);
+				FlurryAgent.init(activity, key);
+//				FlurryAgent.onStartSession(activity, key); on android api >= 14 onStartSession / onEndSession are handled automatically
 			}
 		});
 	}
