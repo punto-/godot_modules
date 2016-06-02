@@ -16,7 +16,7 @@ def configure(env):
 
 	elif env['platform'] == 'android':
 		env.android_add_java_dir("android/src")
-		env.android_add_dependency("compile files('../../../modules/flurry/android//FlurryAgent.jar')")
+		env.android_add_dependency("compile files('../../../modules/flurry/android/FlurryAgent.jar')")
 #		env.android_add_dependency("compile 'com.google.android.gms:play-services:7.3.+'")
 		env.disable_module()
 
